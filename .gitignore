@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.env
+# 忽略下载的源码和原始大文件
+data/raw/
+data/processed/*.log
