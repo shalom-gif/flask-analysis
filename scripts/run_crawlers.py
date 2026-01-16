@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 """
-简单爬取脚本 - 避免导入问题
-约80行代码
+爬取脚本
 """
 
 import os
@@ -13,7 +12,7 @@ import pandas as pd
 from datetime import datetime
 
 def main():
-    print("简单数据爬取脚本")
+    print("数据爬取脚本")
     print("=" * 50)
     
     # 基础配置
@@ -71,7 +70,7 @@ def main():
                     "most_active_author": df["author"].value_counts().idxmax() if len(df) > 0 else "无"
                 }
                 
-                print(f"✓ 提取到 {len(df)} 条提交记录")
+                print(f" 提取到 {len(df)} 条提交记录")
                 print(f"  作者数量: {stats['unique_authors']}")
                 print(f"  最活跃作者: {stats['most_active_author']}")
                 
@@ -79,12 +78,12 @@ def main():
                 with open(os.path.join(PROCESSED_DATA_DIR, "git_stats.json"), "w", encoding='utf-8') as f:
                     json.dump(stats, f, indent=2, ensure_ascii=False)
             else:
-                print("⚠ 未提取到提交记录")
+                print(" 未提取到提交记录")
                 
         except Exception as e:
-            print(f"✗ Git提交历史提取失败: {e}")
+            print(f" Git提交历史提取失败: {e}")
     else:
-        print("⚠ Flask仓库不存在，跳过Git历史提取")
+        print(" Flask仓库不存在，跳过Git历史提取")
     
     # 2. 生成版本信息
     print("\n[2/3] 生成版本信息...")
@@ -105,7 +104,7 @@ def main():
                 "downloaded": True,
                 "path": version_dir
             })
-            print(f"✓ 版本 {version}: {len(py_files)} 个Python文件")
+            print(f" 版本 {version}: {len(py_files)} 个Python文件")
         else:
             versions_info.append({
                 "version": version,
@@ -113,7 +112,7 @@ def main():
                 "downloaded": False,
                 "path": "未下载"
             })
-            print(f"✗ 版本 {version}: 未下载")
+            print(f" 版本 {version}: 未下载")
     
     # 保存版本信息
     with open(os.path.join(PROCESSED_DATA_DIR, "versions_info.json"), "w", encoding='utf-8') as f:
@@ -135,7 +134,7 @@ def main():
     with open(os.path.join(PROCESSED_DATA_DIR, "project_report.json"), "w", encoding='utf-8') as f:
         json.dump(report, f, indent=2, ensure_ascii=False)
     
-    print(f"✓ 项目报告已生成")
+    print(f" 项目报告已生成")
     
     print("\n" + "=" * 50)
     print("数据爬取完成！")

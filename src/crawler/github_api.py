@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 """
-GitHub API数据爬取 - 简洁版
-约50行代码
+GitHub API数据爬取
 """
 
 import requests

@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 """
-数据预处理 - 简洁版
-约40行代码
+数据预处理 
 """
 
 import os
@@ -18,13 +17,13 @@ def preprocess_data():
     # 1. 加载提交数据
     git_logs_dir = os.path.join(RAW_DATA_DIR, "git_logs_raw")
     if not os.path.exists(git_logs_dir):
-        print("✗ 没有找到提交历史数据")
+        print(" 没有找到提交历史数据")
         return
     
     # 找到最新的提交数据文件
     csv_files = [f for f in os.listdir(git_logs_dir) if f.endswith(".csv")]
     if not csv_files:
-        print("✗ 没有找到CSV文件")
+        print(" 没有找到CSV文件")
         return
     
     latest_date = max([f.split("_")[1].split(".")[0] for f in csv_files if "commits_" in f])

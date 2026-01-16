@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿# Python
 __pycache__/
 *.py[cod]
@@ -46,3 +47,13 @@ Thumbs.db
 
 # Project specific
 *.log
+=======
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.env
+# 忽略下载的源码和原始大文件
+data/raw/
+data/processed/*.log
+>>>>>>> 18edd0e19ea9d9d14a8bb0a92e4e4db7c0d62ee6
