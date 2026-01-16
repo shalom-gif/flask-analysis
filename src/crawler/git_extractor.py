@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 """
-Git提交历史提取 - 简洁版
-约60行代码
+Git提交历史提取
 """
 
 import os
@@ -19,7 +18,7 @@ def extract_git_history():
     repo_path = os.path.join(RAW_DATA_DIR, "flask_main")
     
     if not os.path.exists(repo_path):
-        print(f"✗ 仓库不存在: {repo_path}")
+        print(f" 仓库不存在: {repo_path}")
         return None
     
     # 1. 提取提交日志
