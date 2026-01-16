@@ -1,0 +1,20 @@
+{
+  "project": "Flask开源软件分析",
+  "timestamp": "2026-01-16T18:14:15.253151",
+  "data_collection": {
+    "git_history": "extracted",
+    "flask_versions": [
+      "2.0.0",
+      "2.1.0",
+      "2.2.0",
+      "2.3.0",
+      "3.0.0"
+    ],
+    "total_python_files": 391
+  },
+  "next_steps": [
+    "静态分析",
+    "动态分析",
+    "可视化"
+  ]
+}
