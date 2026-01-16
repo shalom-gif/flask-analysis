@@ -1,0 +1,32 @@
+[
+  {
+    "version": "2.0.0",
+    "python_files": 75,
+    "downloaded": true,
+    "path": "D:\\flask-analysis-main\\data\\raw\\flask_repos\\flask_2.0.0"
+  },
+  {
+    "version": "2.1.0",
+    "python_files": 75,
+    "downloaded": true,
+    "path": "D:\\flask-analysis-main\\data\\raw\\flask_repos\\flask_2.1.0"
+  },
+  {
+    "version": "2.2.0",
+    "python_files": 79,
+    "downloaded": true,
+    "path": "D:\\flask-analysis-main\\data\\raw\\flask_repos\\flask_2.2.0"
+  },
+  {
+    "version": "2.3.0",
+    "python_files": 80,
+    "downloaded": true,
+    "path": "D:\\flask-analysis-main\\data\\raw\\flask_repos\\flask_2.3.0"
+  },
+  {
+    "version": "3.0.0",
+    "python_files": 82,
+    "downloaded": true,
+    "path": "D:\\flask-analysis-main\\data\\raw\\flask_repos\\flask_3.0.0"
+  }
+]
