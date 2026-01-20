@@ -1,0 +1,15 @@
+{
+  "versions_analyzed": [
+    "flask_2.0.0",
+    "flask_2.1.0",
+    "flask_2.2.0",
+    "flask_2.3.0",
+    "flask_3.0.0"
+  ],
+  "summary": {
+    "first_version": "flask_2.0.0",
+    "last_version": "flask_3.0.0",
+    "changes": {}
+  },
+  "recommendations": []
+}
