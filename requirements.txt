@@ -1,6 +1,15 @@
+#  (基础与静态分析) 
 requests==2.31.0
 gitpython==3.1.40
 pandas==2.2.0
 numpy==1.26.4
 tqdm==4.66.2
 libcst==1.1.0
+
+# (动态分析与可视化) 
+flask
+pysnooper
+z3-solver
+matplotlib
+graphviz
+jupyter

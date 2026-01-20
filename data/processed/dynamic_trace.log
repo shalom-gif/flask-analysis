@@ -1,0 +1,463 @@
+
+[Session Restart] 2026-01-18 22:05:21.448716
+Source path:... C:\Users\Administrator\flask-analysis\src\dynamic_analysis\tracer.py
+22:05:35.505677 call        28 def hello_world():
+22:05:35.509585 line        29     print("--- 收到请求，PySnooper 正在记录... ---")
+22:05:35.511315 line        30     today = datetime.date.today()
+New var:....... today = datetime.date(2026, 1, 18)
+22:05:35.512174 line        31     result = []
+New var:....... result = []
+22:05:35.513545 line        32     for i in range(3):
+New var:....... i = 0
+22:05:35.515074 line        33         result.append(i * 10)
+Modified var:.. result = [0]
+22:05:35.517742 line        32     for i in range(3):
+Modified var:.. i = 1
+22:05:35.519450 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10]
+22:05:35.520564 line        32     for i in range(3):
+Modified var:.. i = 2
+22:05:35.521641 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10, 20]
+22:05:35.522805 line        32     for i in range(3):
+22:05:35.523944 line        34     return f"Hello! Date: {today}, Calculation: {result}"
+22:05:35.524632 return      34     return f"Hello! Date: {today}, Calculation: {result}"
+Return value:.. 'Hello! Date: 2026-01-18, Calculation: [0, 10, 20]'
+Elapsed time: 00:00:00.022962
+22:05:36.950113 call        28 def hello_world():
+22:05:36.951496 line        29     print("--- 收到请求，PySnooper 正在记录... ---")
+22:05:36.952917 line        30     today = datetime.date.today()
+New var:....... today = datetime.date(2026, 1, 18)
+22:05:36.953704 line        31     result = []
+New var:....... result = []
+22:05:36.954810 line        32     for i in range(3):
+New var:....... i = 0
+22:05:36.956131 line        33         result.append(i * 10)
+Modified var:.. result = [0]
+22:05:36.957347 line        32     for i in range(3):
+Modified var:.. i = 1
+22:05:36.958537 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10]
+22:05:36.959719 line        32     for i in range(3):
+Modified var:.. i = 2
+22:05:36.960853 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10, 20]
+22:05:36.962051 line        32     for i in range(3):
+22:05:36.963161 line        34     return f"Hello! Date: {today}, Calculation: {result}"
+22:05:36.963773 return      34     return f"Hello! Date: {today}, Calculation: {result}"
+Return value:.. 'Hello! Date: 2026-01-18, Calculation: [0, 10, 20]'
+Elapsed time: 00:00:00.015155
+22:05:38.199918 call        28 def hello_world():
+22:05:38.200490 line        29     print("--- 收到请求，PySnooper 正在记录... ---")
+22:05:38.201082 line        30     today = datetime.date.today()
+New var:....... today = datetime.date(2026, 1, 18)
+22:05:38.201545 line        31     result = []
+New var:....... result = []
+22:05:38.202278 line        32     for i in range(3):
+New var:....... i = 0
+22:05:38.202952 line        33         result.append(i * 10)
+Modified var:.. result = [0]
+22:05:38.203738 line        32     for i in range(3):
+Modified var:.. i = 1
+22:05:38.204497 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10]
+22:05:38.205325 line        32     for i in range(3):
+Modified var:.. i = 2
+22:05:38.206055 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10, 20]
+22:05:38.206737 line        32     for i in range(3):
+22:05:38.207523 line        34     return f"Hello! Date: {today}, Calculation: {result}"
+22:05:38.207927 return      34     return f"Hello! Date: {today}, Calculation: {result}"
+Return value:.. 'Hello! Date: 2026-01-18, Calculation: [0, 10, 20]'
+Elapsed time: 00:00:00.009042
+22:05:39.173709 call        28 def hello_world():
+22:05:39.174602 line        29     print("--- 收到请求，PySnooper 正在记录... ---")
+22:05:39.176214 line        30     today = datetime.date.today()
+New var:....... today = datetime.date(2026, 1, 18)
+22:05:39.177067 line        31     result = []
+New var:....... result = []
+22:05:39.178465 line        32     for i in range(3):
+New var:....... i = 0
+22:05:39.179917 line        33         result.append(i * 10)
+Modified var:.. result = [0]
+22:05:39.181063 line        32     for i in range(3):
+Modified var:.. i = 1
+22:05:39.182112 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10]
+22:05:39.183124 line        32     for i in range(3):
+Modified var:.. i = 2
+22:05:39.184099 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10, 20]
+22:05:39.185062 line        32     for i in range(3):
+22:05:39.186007 line        34     return f"Hello! Date: {today}, Calculation: {result}"
+22:05:39.186521 return      34     return f"Hello! Date: {today}, Calculation: {result}"
+Return value:.. 'Hello! Date: 2026-01-18, Calculation: [0, 10, 20]'
+Elapsed time: 00:00:00.014069
+22:05:39.853093 call        28 def hello_world():
+22:05:39.853850 line        29     print("--- 收到请求，PySnooper 正在记录... ---")
+22:05:39.857057 line        30     today = datetime.date.today()
+New var:....... today = datetime.date(2026, 1, 18)
+22:05:39.858051 line        31     result = []
+New var:....... result = []
+22:05:39.859425 line        32     for i in range(3):
+New var:....... i = 0
+22:05:39.860756 line        33         result.append(i * 10)
+Modified var:.. result = [0]
+22:05:39.862008 line        32     for i in range(3):
+Modified var:.. i = 1
+22:05:39.863141 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10]
+22:05:39.864360 line        32     for i in range(3):
+Modified var:.. i = 2
+22:05:39.865888 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10, 20]
+22:05:39.867996 line        32     for i in range(3):
+22:05:39.869508 line        34     return f"Hello! Date: {today}, Calculation: {result}"
+22:05:39.870251 return      34     return f"Hello! Date: {today}, Calculation: {result}"
+Return value:.. 'Hello! Date: 2026-01-18, Calculation: [0, 10, 20]'
+Elapsed time: 00:00:00.018928
+22:05:40.357966 call        28 def hello_world():
+22:05:40.358523 line        29     print("--- 收到请求，PySnooper 正在记录... ---")
+22:05:40.359053 line        30     today = datetime.date.today()
+New var:....... today = datetime.date(2026, 1, 18)
+22:05:40.360178 line        31     result = []
+New var:....... result = []
+22:05:40.361454 line        32     for i in range(3):
+New var:....... i = 0
+22:05:40.362512 line        33         result.append(i * 10)
+Modified var:.. result = [0]
+22:05:40.363719 line        32     for i in range(3):
+Modified var:.. i = 1
+22:05:40.364728 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10]
+22:05:40.365710 line        32     for i in range(3):
+Modified var:.. i = 2
+22:05:40.366379 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10, 20]
+22:05:40.367023 line        32     for i in range(3):
+22:05:40.367701 line        34     return f"Hello! Date: {today}, Calculation: {result}"
+22:05:40.368265 return      34     return f"Hello! Date: {today}, Calculation: {result}"
+Return value:.. 'Hello! Date: 2026-01-18, Calculation: [0, 10, 20]'
+Elapsed time: 00:00:00.011589
+22:06:46.277224 call        28 def hello_world():
+22:06:46.278076 line        29     print("--- 收到请求，PySnooper 正在记录... ---")
+22:06:46.280101 line        30     today = datetime.date.today()
+New var:....... today = datetime.date(2026, 1, 18)
+22:06:46.280928 line        31     result = []
+New var:....... result = []
+22:06:46.281910 line        32     for i in range(3):
+New var:....... i = 0
+22:06:46.283665 line        33         result.append(i * 10)
+Modified var:.. result = [0]
+22:06:46.285117 line        32     for i in range(3):
+Modified var:.. i = 1
+22:06:46.286446 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10]
+22:06:46.287453 line        32     for i in range(3):
+Modified var:.. i = 2
+22:06:46.288887 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10, 20]
+22:06:46.290264 line        32     for i in range(3):
+22:06:46.291493 line        34     return f"Hello! Date: {today}, Calculation: {result}"
+22:06:46.292039 return      34     return f"Hello! Date: {today}, Calculation: {result}"
+Return value:.. 'Hello! Date: 2026-01-18, Calculation: [0, 10, 20]'
+Elapsed time: 00:00:00.016252
+22:06:48.629763 call        28 def hello_world():
+22:06:48.630415 line        29     print("--- 收到请求，PySnooper 正在记录... ---")
+22:06:48.631023 line        30     today = datetime.date.today()
+New var:....... today = datetime.date(2026, 1, 18)
+22:06:48.631951 line        31     result = []
+New var:....... result = []
+22:06:48.633518 line        32     for i in range(3):
+New var:....... i = 0
+22:06:48.634660 line        33         result.append(i * 10)
+Modified var:.. result = [0]
+22:06:48.635671 line        32     for i in range(3):
+Modified var:.. i = 1
+22:06:48.636493 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10]
+22:06:48.637119 line        32     for i in range(3):
+Modified var:.. i = 2
+22:06:48.637897 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10, 20]
+22:06:48.639607 line        32     for i in range(3):
+22:06:48.640247 line        34     return f"Hello! Date: {today}, Calculation: {result}"
+22:06:48.640587 return      34     return f"Hello! Date: {today}, Calculation: {result}"
+Return value:.. 'Hello! Date: 2026-01-18, Calculation: [0, 10, 20]'
+Elapsed time: 00:00:00.011756
+22:06:50.581856 call        28 def hello_world():
+22:06:50.583245 line        29     print("--- 收到请求，PySnooper 正在记录... ---")
+22:06:50.584175 line        30     today = datetime.date.today()
+New var:....... today = datetime.date(2026, 1, 18)
+22:06:50.584801 line        31     result = []
+New var:....... result = []
+22:06:50.585913 line        32     for i in range(3):
+New var:....... i = 0
+22:06:50.588161 line        33         result.append(i * 10)
+Modified var:.. result = [0]
+22:06:50.590150 line        32     for i in range(3):
+Modified var:.. i = 1
+22:06:50.591816 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10]
+22:06:50.592938 line        32     for i in range(3):
+Modified var:.. i = 2
+22:06:50.594178 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10, 20]
+22:06:50.595084 line        32     for i in range(3):
+22:06:50.596396 line        34     return f"Hello! Date: {today}, Calculation: {result}"
+22:06:50.597017 return      34     return f"Hello! Date: {today}, Calculation: {result}"
+Return value:.. 'Hello! Date: 2026-01-18, Calculation: [0, 10, 20]'
+Elapsed time: 00:00:00.017092
+22:06:52.543602 call        28 def hello_world():
+22:06:52.544266 line        29     print("--- 收到请求，PySnooper 正在记录... ---")
+22:06:52.544851 line        30     today = datetime.date.today()
+New var:....... today = datetime.date(2026, 1, 18)
+22:06:52.545301 line        31     result = []
+New var:....... result = []
+22:06:52.546285 line        32     for i in range(3):
+New var:....... i = 0
+22:06:52.547349 line        33         result.append(i * 10)
+Modified var:.. result = [0]
+22:06:52.548008 line        32     for i in range(3):
+Modified var:.. i = 1
+22:06:52.548514 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10]
+22:06:52.549142 line        32     for i in range(3):
+Modified var:.. i = 2
+22:06:52.550046 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10, 20]
+22:06:52.551084 line        32     for i in range(3):
+22:06:52.552140 line        34     return f"Hello! Date: {today}, Calculation: {result}"
+22:06:52.552749 return      34     return f"Hello! Date: {today}, Calculation: {result}"
+Return value:.. 'Hello! Date: 2026-01-18, Calculation: [0, 10, 20]'
+Elapsed time: 00:00:00.010266
+22:06:54.080226 call        28 def hello_world():
+22:06:54.081355 line        29     print("--- 收到请求，PySnooper 正在记录... ---")
+22:06:54.082118 line        30     today = datetime.date.today()
+New var:....... today = datetime.date(2026, 1, 18)
+22:06:54.082792 line        31     result = []
+New var:....... result = []
+22:06:54.084421 line        32     for i in range(3):
+New var:....... i = 0
+22:06:54.085276 line        33         result.append(i * 10)
+Modified var:.. result = [0]
+22:06:54.085825 line        32     for i in range(3):
+Modified var:.. i = 1
+22:06:54.086356 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10]
+22:06:54.087141 line        32     for i in range(3):
+Modified var:.. i = 2
+22:06:54.088026 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10, 20]
+22:06:54.089053 line        32     for i in range(3):
+22:06:54.089932 line        34     return f"Hello! Date: {today}, Calculation: {result}"
+22:06:54.090272 return      34     return f"Hello! Date: {today}, Calculation: {result}"
+Return value:.. 'Hello! Date: 2026-01-18, Calculation: [0, 10, 20]'
+Elapsed time: 00:00:00.010924
+22:06:56.533412 call        28 def hello_world():
+22:06:56.534004 line        29     print("--- 收到请求，PySnooper 正在记录... ---")
+22:06:56.534780 line        30     today = datetime.date.today()
+New var:....... today = datetime.date(2026, 1, 18)
+22:06:56.535260 line        31     result = []
+New var:....... result = []
+22:06:56.535932 line        32     for i in range(3):
+New var:....... i = 0
+22:06:56.537202 line        33         result.append(i * 10)
+Modified var:.. result = [0]
+22:06:56.538141 line        32     for i in range(3):
+Modified var:.. i = 1
+22:06:56.539020 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10]
+22:06:56.539684 line        32     for i in range(3):
+Modified var:.. i = 2
+22:06:56.540248 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10, 20]
+22:06:56.540967 line        32     for i in range(3):
+22:06:56.541493 line        34     return f"Hello! Date: {today}, Calculation: {result}"
+22:06:56.541769 return      34     return f"Hello! Date: {today}, Calculation: {result}"
+Return value:.. 'Hello! Date: 2026-01-18, Calculation: [0, 10, 20]'
+Elapsed time: 00:00:00.009328
+22:07:04.448775 call        28 def hello_world():
+22:07:04.449347 line        29     print("--- 收到请求，PySnooper 正在记录... ---")
+22:07:04.449874 line        30     today = datetime.date.today()
+New var:....... today = datetime.date(2026, 1, 18)
+22:07:04.450395 line        31     result = []
+New var:....... result = []
+22:07:04.451440 line        32     for i in range(3):
+New var:....... i = 0
+22:07:04.452200 line        33         result.append(i * 10)
+Modified var:.. result = [0]
+22:07:04.452981 line        32     for i in range(3):
+Modified var:.. i = 1
+22:07:04.453832 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10]
+22:07:04.454674 line        32     for i in range(3):
+Modified var:.. i = 2
+22:07:04.455653 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10, 20]
+22:07:04.456428 line        32     for i in range(3):
+22:07:04.457462 line        34     return f"Hello! Date: {today}, Calculation: {result}"
+22:07:04.457988 return      34     return f"Hello! Date: {today}, Calculation: {result}"
+Return value:.. 'Hello! Date: 2026-01-18, Calculation: [0, 10, 20]'
+Elapsed time: 00:00:00.010420
+22:07:06.177687 call        28 def hello_world():
+22:07:06.178286 line        29     print("--- 收到请求，PySnooper 正在记录... ---")
+22:07:06.178860 line        30     today = datetime.date.today()
+New var:....... today = datetime.date(2026, 1, 18)
+22:07:06.179507 line        31     result = []
+New var:....... result = []
+22:07:06.180950 line        32     for i in range(3):
+New var:....... i = 0
+22:07:06.181926 line        33         result.append(i * 10)
+Modified var:.. result = [0]
+22:07:06.182823 line        32     for i in range(3):
+Modified var:.. i = 1
+22:07:06.183630 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10]
+22:07:06.184464 line        32     for i in range(3):
+Modified var:.. i = 2
+22:07:06.185292 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10, 20]
+22:07:06.186057 line        32     for i in range(3):
+22:07:06.186631 line        34     return f"Hello! Date: {today}, Calculation: {result}"
+22:07:06.187004 return      34     return f"Hello! Date: {today}, Calculation: {result}"
+Return value:.. 'Hello! Date: 2026-01-18, Calculation: [0, 10, 20]'
+Elapsed time: 00:00:00.010430
+22:07:12.833950 call        28 def hello_world():
+22:07:12.835012 line        29     print("--- 收到请求，PySnooper 正在记录... ---")
+22:07:12.835763 line        30     today = datetime.date.today()
+New var:....... today = datetime.date(2026, 1, 18)
+22:07:12.836443 line        31     result = []
+New var:....... result = []
+22:07:12.837200 line        32     for i in range(3):
+New var:....... i = 0
+22:07:12.837934 line        33         result.append(i * 10)
+Modified var:.. result = [0]
+22:07:12.838776 line        32     for i in range(3):
+Modified var:.. i = 1
+22:07:12.840336 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10]
+22:07:12.844067 line        32     for i in range(3):
+Modified var:.. i = 2
+22:07:12.846138 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10, 20]
+22:07:12.847641 line        32     for i in range(3):
+22:07:12.848422 line        34     return f"Hello! Date: {today}, Calculation: {result}"
+22:07:12.849085 return      34     return f"Hello! Date: {today}, Calculation: {result}"
+Return value:.. 'Hello! Date: 2026-01-18, Calculation: [0, 10, 20]'
+Elapsed time: 00:00:00.016784
+22:09:01.397790 call        28 def hello_world():
+22:09:01.398595 line        29     print("--- 收到请求，PySnooper 正在记录... ---")
+22:09:01.399055 line        30     today = datetime.date.today()
+New var:....... today = datetime.date(2026, 1, 18)
+22:09:01.399328 line        31     result = []
+New var:....... result = []
+22:09:01.399869 line        32     for i in range(3):
+New var:....... i = 0
+22:09:01.400289 line        33         result.append(i * 10)
+Modified var:.. result = [0]
+22:09:01.400677 line        32     for i in range(3):
+Modified var:.. i = 1
+22:09:01.400995 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10]
+22:09:01.401276 line        32     for i in range(3):
+Modified var:.. i = 2
+22:09:01.401584 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10, 20]
+22:09:01.401880 line        32     for i in range(3):
+22:09:01.402148 line        34     return f"Hello! Date: {today}, Calculation: {result}"
+22:09:01.402466 return      34     return f"Hello! Date: {today}, Calculation: {result}"
+Return value:.. 'Hello! Date: 2026-01-18, Calculation: [0, 10, 20]'
+Elapsed time: 00:00:00.005382
+22:09:02.478045 call        28 def hello_world():
+22:09:02.478580 line        29     print("--- 收到请求，PySnooper 正在记录... ---")
+22:09:02.479571 line        30     today = datetime.date.today()
+New var:....... today = datetime.date(2026, 1, 18)
+22:09:02.480051 line        31     result = []
+New var:....... result = []
+22:09:02.480879 line        32     for i in range(3):
+New var:....... i = 0
+22:09:02.481392 line        33         result.append(i * 10)
+Modified var:.. result = [0]
+22:09:02.482187 line        32     for i in range(3):
+Modified var:.. i = 1
+22:09:02.482824 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10]
+22:09:02.483386 line        32     for i in range(3):
+Modified var:.. i = 2
+22:09:02.483973 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10, 20]
+22:09:02.484611 line        32     for i in range(3):
+22:09:02.485315 line        34     return f"Hello! Date: {today}, Calculation: {result}"
+22:09:02.485646 return      34     return f"Hello! Date: {today}, Calculation: {result}"
+Return value:.. 'Hello! Date: 2026-01-18, Calculation: [0, 10, 20]'
+Elapsed time: 00:00:00.008635
+22:09:03.431180 call        28 def hello_world():
+22:09:03.431676 line        29     print("--- 收到请求，PySnooper 正在记录... ---")
+22:09:03.431968 line        30     today = datetime.date.today()
+New var:....... today = datetime.date(2026, 1, 18)
+22:09:03.432191 line        31     result = []
+New var:....... result = []
+22:09:03.432558 line        32     for i in range(3):
+New var:....... i = 0
+22:09:03.433048 line        33         result.append(i * 10)
+Modified var:.. result = [0]
+22:09:03.433380 line        32     for i in range(3):
+Modified var:.. i = 1
+22:09:03.433749 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10]
+22:09:03.434193 line        32     for i in range(3):
+Modified var:.. i = 2
+22:09:03.434675 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10, 20]
+22:09:03.435541 line        32     for i in range(3):
+22:09:03.437347 line        34     return f"Hello! Date: {today}, Calculation: {result}"
+22:09:03.438041 return      34     return f"Hello! Date: {today}, Calculation: {result}"
+Return value:.. 'Hello! Date: 2026-01-18, Calculation: [0, 10, 20]'
+Elapsed time: 00:00:00.008399
+22:09:05.269060 call        28 def hello_world():
+22:09:05.269604 line        29     print("--- 收到请求，PySnooper 正在记录... ---")
+22:09:05.269905 line        30     today = datetime.date.today()
+New var:....... today = datetime.date(2026, 1, 18)
+22:09:05.270126 line        31     result = []
+New var:....... result = []
+22:09:05.270498 line        32     for i in range(3):
+New var:....... i = 0
+22:09:05.270849 line        33         result.append(i * 10)
+Modified var:.. result = [0]
+22:09:05.271243 line        32     for i in range(3):
+Modified var:.. i = 1
+22:09:05.271604 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10]
+22:09:05.271956 line        32     for i in range(3):
+Modified var:.. i = 2
+22:09:05.272315 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10, 20]
+22:09:05.272958 line        32     for i in range(3):
+22:09:05.273432 line        34     return f"Hello! Date: {today}, Calculation: {result}"
+22:09:05.273679 return      34     return f"Hello! Date: {today}, Calculation: {result}"
+Return value:.. 'Hello! Date: 2026-01-18, Calculation: [0, 10, 20]'
+Elapsed time: 00:00:00.005291
+22:09:06.376943 call        28 def hello_world():
+22:09:06.377786 line        29     print("--- 收到请求，PySnooper 正在记录... ---")
+22:09:06.378572 line        30     today = datetime.date.today()
+New var:....... today = datetime.date(2026, 1, 18)
+22:09:06.379418 line        31     result = []
+New var:....... result = []
+22:09:06.380773 line        32     for i in range(3):
+New var:....... i = 0
+22:09:06.382117 line        33         result.append(i * 10)
+Modified var:.. result = [0]
+22:09:06.383482 line        32     for i in range(3):
+Modified var:.. i = 1
+22:09:06.384184 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10]
+22:09:06.385637 line        32     for i in range(3):
+Modified var:.. i = 2
+22:09:06.386895 line        33         result.append(i * 10)
+Modified var:.. result = [0, 10, 20]
+22:09:06.387898 line        32     for i in range(3):
+22:09:06.388705 line        34     return f"Hello! Date: {today}, Calculation: {result}"
+22:09:06.389730 return      34     return f"Hello! Date: {today}, Calculation: {result}"
+Return value:.. 'Hello! Date: 2026-01-18, Calculation: [0, 10, 20]'
+Elapsed time: 00:00:00.014869
