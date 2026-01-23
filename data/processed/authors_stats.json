@@ -1,0 +1,62 @@
+{
+  "pgjones": {
+    "commits": 12,
+    "first_commit": "2023-06-10",
+    "last_commit": "2023-09-30",
+    "span_days": 112
+  },
+  "nick2202": {
+    "commits": 1,
+    "first_commit": "2023-09-22",
+    "last_commit": "2023-09-22",
+    "span_days": 0
+  },
+  "David Lord": {
+    "commits": 67,
+    "first_commit": "2023-05-31",
+    "last_commit": "2023-09-05",
+    "span_days": 97
+  },
+  "dependabot[bot]": {
+    "commits": 12,
+    "first_commit": "2023-06-01",
+    "last_commit": "2023-09-01",
+    "span_days": 91
+  },
+  "pavithra": {
+    "commits": 1,
+    "first_commit": "2023-08-13",
+    "last_commit": "2023-08-13",
+    "span_days": 0
+  },
+  "hauntsaninja": {
+    "commits": 1,
+    "first_commit": "2023-08-08",
+    "last_commit": "2023-08-08",
+    "span_days": 0
+  },
+  "pre-commit-ci[bot]": {
+    "commits": 3,
+    "first_commit": "2023-06-06",
+    "last_commit": "2023-08-01",
+    "span_days": 56
+  },
+  "Pamela Fox": {
+    "commits": 1,
+    "first_commit": "2023-07-01",
+    "last_commit": "2023-07-01",
+    "span_days": 0
+  },
+  "ToolMoney": {
+    "commits": 1,
+    "first_commit": "2023-06-29",
+    "last_commit": "2023-06-29",
+    "span_days": 0
+  },
+  "mohammad m. moniri": {
+    "commits": 1,
+    "first_commit": "2023-06-21",
+    "last_commit": "2023-06-21",
+    "span_days": 0
+  }
+}

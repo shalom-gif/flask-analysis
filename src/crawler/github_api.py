@@ -1,78 +1,129 @@
 #!/usr/bin/env python
 # coding: utf-8
 """
-GitHub API数据爬取
+GitHub API数据采集
 """
 
 import requests
 import json
 import os
 import time
-from config import GITHUB_TOKEN, FLASK_REPO_OWNER, FLASK_REPO_NAME, PROCESSED_DATA_DIR
+import urllib3
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
 
-def fetch_github_data():
-    """从GitHub API获取数据"""
-    print("从GitHub API获取数据...")
+# 禁用SSL警告
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_JSON = os.path.join(BASE_DIR, '../../data/processed/github_info.json')
+OUTPUT_CSV = os.path.join(BASE_DIR, '../../data/processed/github_stats.csv')
+
+GITHUB_TOKEN = ""
+REPO_OWNER = "pallets"
+REPO_NAME = "flask"
+
+def create_session():
+    """创建一个带重试和超时设置的session"""
+    session = requests.Session()
     
-    headers = {"Authorization": f"token {GITHUB_TOKEN}"} if GITHUB_TOKEN else {}
+    # 设置重试策略
+    retry_strategy = Retry(
+        total=3,
+        backoff_factor=1,
+        status_forcelist=[429, 500, 502, 503, 504],
+    )
     
-    # 1. 获取仓库信息
-    print("获取仓库信息...")
-    url = f"https://api.github.com/repos/{FLASK_REPO_OWNER}/{FLASK_REPO_NAME}"
-    response = requests.get(url, headers=headers)
+    adapter = HTTPAdapter(max_retries=retry_strategy)
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
     
-    if response.status_code == 200:
-        repo_data = response.json()
-        repo_info = {
-            "stars": repo_data["stargazers_count"],
-            "forks": repo_data["forks_count"],
-            "watchers": repo_data["subscribers_count"],
-            "open_issues": repo_data["open_issues_count"],
-            "created_at": repo_data["created_at"],
-            "updated_at": repo_data["updated_at"],
-            "language": repo_data["language"],
-            "size": repo_data["size"]
-        }
-        print(f"仓库信息: {repo_info['stars']} stars, {repo_info['forks']} forks")
-    else:
-        print(f"获取仓库信息失败: {response.status_code}")
-        repo_info = {}
+    return session
+
+def make_request(url, headers=None):
+    """发送请求，跳过SSL验证（仅用于测试环境）"""
+    try:
+        # 使用session
+        session = create_session()
+        response = session.get(url, headers=headers, timeout=30, verify=False)
+        
+        if response.status_code == 200:
+            return response.json()
+        else:
+            print(f"请求失败，状态码: {response.status_code}")
+            print(f"响应内容: {response.text[:200]}")
+            return None
+    except Exception as e:
+        print(f"请求异常: {e}")
+        return None
+
+def main():
+    print("开始采集GitHub数据...")
     
-    # 2. 获取最近的issues
-    print("获取最近的issues...")
-    url = f"https://api.github.com/repos/{FLASK_REPO_OWNER}/{FLASK_REPO_NAME}/issues"
-    params = {"state": "all", "per_page": 50, "sort": "created", "direction": "desc"}
-    response = requests.get(url, headers=headers, params=params)
+    headers = {}
+    if GITHUB_TOKEN:
+        headers["Authorization"] = f"token {GITHUB_TOKEN}"
     
+    # 仓库信息
+    repo_url = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}"
+    print(f"请求URL: {repo_url}")
+    
+    repo_data = make_request(repo_url, headers)
+    
+    if not repo_data:
+        print("获取仓库信息失败，请检查网络连接或SSL设置")
+        return
+    
+    repo_info = {
+        "name": repo_data.get("name"),
+        "full_name": repo_data.get("full_name"),
+        "stars": repo_data.get("stargazers_count", 0),
+        "forks": repo_data.get("forks_count", 0),
+        "open_issues": repo_data.get("open_issues_count", 0),
+        "created_at": repo_data.get("created_at"),
+        "updated_at": repo_data.get("updated_at"),
+        "language": repo_data.get("language"),
+        "size": repo_data.get("size"),
+        "license": repo_data.get("license", {}).get("name") if repo_data.get("license") else None
+    }
+    
+    print(f"成功获取仓库信息: {repo_info['full_name']}")
+    
+    # Issues
+    issues_url = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/issues"
+    issues_data = make_request(issues_url, headers)
     issues = []
-    if response.status_code == 200:
-        for issue in response.json():
-            # 过滤掉pull requests
-            if "pull_request" not in issue:
-                issues.append({
-                    "number": issue["number"],
-                    "title": issue["title"],
-                    "state": issue["state"],
-                    "created_at": issue["created_at"],
-                    "updated_at": issue["updated_at"],
-                    "user": issue["user"]["login"],
-                    "comments": issue["comments"]
-                })
-        print(f"获取到 {len(issues)} 个issues")
-    else:
-        print(f"获取issues失败: {response.status_code}")
+    if issues_data:
+        for issue in issues_data:
+            # 跳过pull request（GitHub API中issues和pull request在同一个接口）
+            if "pull_request" in issue:
+                continue
+            issues.append({
+                "number": issue.get("number"),
+                "title": issue.get("title"),
+                "state": issue.get("state"),
+                "created_at": issue.get("created_at"),
+                "user": issue.get("user", {}).get("login"),
+                "comments": issue.get("comments"),
+            })
     
     # 保存数据
-    os.makedirs(PROCESSED_DATA_DIR, exist_ok=True)
+    all_data = {
+        "repo_info": repo_info,
+        "issues": issues,
+        "fetched_at": time.strftime("%Y-%m-%d %H:%M:%S")
+    }
     
-    with open(os.path.join(PROCESSED_DATA_DIR, "repo_info.json"), "w", encoding='utf-8') as f:
-        json.dump(repo_info, f, indent=2, ensure_ascii=False)
+    os.makedirs(os.path.dirname(OUTPUT_JSON), exist_ok=True)
+    with open(OUTPUT_JSON, 'w', encoding='utf-8') as f:
+        json.dump(all_data, f, indent=2, ensure_ascii=False)
     
-    with open(os.path.join(PROCESSED_DATA_DIR, "issues.json"), "w", encoding='utf-8') as f:
-        json.dump(issues, f, indent=2, ensure_ascii=False)
-    
-    print(f"数据已保存到: {PROCESSED_DATA_DIR}")
-    return repo_info, issues
+    print(f"数据已保存到 {OUTPUT_JSON}")
+    print(f"仓库: {repo_info['full_name']}")
+    print(f"星标: {repo_info['stars']}")
+    print(f"Fork: {repo_info['forks']}")
+    print(f"Issues: {repo_info['open_issues']}")
+    print(f"获取Issues数: {len(issues)}")
 
 if __name__ == "__main__":
-    fetch_github_data()
+    main()

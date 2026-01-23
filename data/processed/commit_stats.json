@@ -1,0 +1,66 @@
+{
+  "total_commits": 100,
+  "unique_commits": 100,
+  "total_authors": 10,
+  "date_range": {
+    "start": "2023-05-31",
+    "end": "2023-09-30",
+    "days": 122
+  },
+  "top_10_authors": {
+    "David Lord": 67,
+    "pgjones": 12,
+    "dependabot[bot]": 12,
+    "pre-commit-ci[bot]": 3,
+    "nick2202": 1,
+    "pavithra": 1,
+    "hauntsaninja": 1,
+    "Pamela Fox": 1,
+    "ToolMoney": 1,
+    "mohammad m. moniri": 1
+  },
+  "most_active_month": "2023-06",
+  "least_active_month": "2023-05",
+  "processing_date": "2026-01-23 18:19:20",
+  "max_monthly_commits": 40,
+  "min_monthly_commits": 1,
+  "avg_monthly_commits": 20.0,
+  "yearly_commits": {
+    "2023": 100
+  },
+  "message_length_stats": {
+    "avg": 36.01,
+    "max": 69,
+    "min": 8,
+    "median": 34.0
+  },
+  "weekday_commits": {
+    "Monday": 7,
+    "Tuesday": 31,
+    "Wednesday": 22,
+    "Thursday": 10,
+    "Friday": 8,
+    "Saturday": 15,
+    "Sunday": 7
+  },
+  "hourly_commits": {
+    "2": 1,
+    "4": 1,
+    "5": 1,
+    "6": 4,
+    "7": 5,
+    "8": 4,
+    "9": 21,
+    "10": 3,
+    "11": 4,
+    "12": 3,
+    "13": 12,
+    "14": 16,
+    "15": 4,
+    "16": 14,
+    "17": 4,
+    "18": 1,
+    "19": 1,
+    "23": 1
+  }
+}

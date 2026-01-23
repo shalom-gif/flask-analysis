@@ -1,0 +1,101 @@
+hash,author,date,message
+735a4701d6d5e848241e7d7535db898efb62d400,pgjones,2023-09-16,Release version 3.0.0
+efe39ae5c4b243a594b4fda2a1251009eb29dddb,pgjones,2023-09-30,Bump Werkzeug 3.0.0
+438edcdf01c392619449a6bdbb18f6cf72ef7bb9,pgjones,2023-09-24,Allow self as an argument to url_for
+b7c1290528f907c9f41afcdfd33a2227c73e26d3,nick2202,2023-09-22,Fix wrong spelling of JS method .innerHTML
+8037487165a196015a646de25cbce6d0351c8fc4,David Lord,2023-09-05,Bump pypa/gh-action-pypi-publish from 1.8.8 to 1.8.10 (#5248)
+e8076d911490870a27122e4b34230090e6d1fc10,David Lord,2023-09-05,Bump slsa-framework/slsa-github-generator from 1.7.0 to 1.9.0 (#5247)
+ecc4a38b7cf95bcf8dfd9e4e6f77492977e255d3,David Lord,2023-09-05,Bump actions/checkout from 3.5.3 to 3.6.0 (#5246)
+24c6508d39ad7fabd4c017b9a47d12539ea6b708,dependabot[bot],2023-09-01,Bump pypa/gh-action-pypi-publish from 1.8.8 to 1.8.10
+98cef9fcca23677f436b2d6d7297d14bb93b59fc,dependabot[bot],2023-09-01,Bump slsa-framework/slsa-github-generator from 1.7.0 to 1.9.0
+0c97a411b430f96694e9980515b5e253ad999327,dependabot[bot],2023-09-01,Bump actions/checkout from 3.5.3 to 3.6.0
+faef9a0fcef307f1a1c380a477b392fa4371d83d,David Lord,2023-08-29,deprecate `__version__` attribute (#5242)
+293041a290178dc1d526075372960c3ca589d366,David Lord,2023-08-29,deprecate __version__ attribute
+153433f612585409f3494a3c44160d888c02612d,David Lord,2023-08-27,Merge remote-tracking branch 'origin/2.3.x'
+65271c105f7c247ecffc9a7121815276e092bd10,pgjones,2023-08-27,Remove print left in by accident
+a6007373b5c521297e2ec24f820b9c7c32659af8,David Lord,2023-08-21,release version 2.3.3 (#5232)
+3205b53c7cf69d17fee49cac6b84978175b7dd73,David Lord,2023-08-21,release version 2.3.3
+9f9550247a2798b9dcc28081c15e266442f4e28a,David Lord,2023-08-21,bump werkzeug 2.3.7
+90967ccb9ab1f757c2637a68ea2e16b8da2605f4,David Lord,2023-08-21,bump werkzeug 2.3.7 (#5231)
+5bb30270d2e68d8d9278ac6f5abf67049acba662,David Lord,2023-08-21,bump werkzeug 2.3.7
+1d8b53f782570b56296d7682cbbf104b6737e805,David Lord,2023-08-20,Split the App and Blueprint into Sansio and IO parts (#5127)
+bc5dd3894b4b19e07abfe6a23d87d66c02e4061f,pgjones,2023-08-19,Add a changelog for the sans-io changes
+318592511c9c7156599fd02e3edf625097ecb434,pgjones,2023-08-15,Add a brief README to the sansio
+80cf589a26d792820f135591eb8007bca891bf4f,pgjones,2023-08-14,Correct the error handler typing
+cc80a47f5be6c60e53c42ef9378e6db3b0e183b1,pgjones,2023-07-16,Widen the response typing
+3f6b243cec6859185ea4064e84b33c07cc7febf6,pgjones,2023-07-15,Support async template context processors
+72c85e80c8ef9e6d5b5644f7bb23cdc175ca3873,pgjones,2023-07-15,Provide an extendable merge blueprint funcs method
+0ec7f713d679ceed2c605e62ac5d38d579f29fa0,pgjones,2023-06-11,Split the App and Blueprint into Sansio and IO parts
+a64588f87a2bd7ba557814ec039e3b2af2ce842d,pgjones,2023-06-10,Move file to sansio
+0e0e8ddcdc2bd572cdecd371bc0f309ac62ee9c4,David Lord,2023-08-16,remove deprecated code (#5223)
+04994df59f2f642e52ba46ca656088bcdb931262,David Lord,2023-08-16,remove deprecated code
+6a12b191f7058a179237b4b3dfc146e559777d9b,David Lord,2023-08-16,start version 3.0.0
+9e9acfb3fe5cf33549da1a8324b395e1fb4145b0,David Lord,2023-08-16,Merge branch '2.3.x'
+02736640095ed6d5a4a409a9658eaca373fd1d48,David Lord,2023-08-16,Update dispatch by path example (#5217)
+a887e179b8af6a9c582a7918f9f8499ab58032cc,David Lord,2023-08-16,clean up
+aa6d4c3e92bd11a7d449f49f524e54bbb88b89c0,pavithra,2023-08-13,update dispatch-by-path example
+6d49a1e4b74fe4361cc8ab58767effece56c1f0c,David Lord,2023-08-16,Merge branch '2.3.x'
+826514b8eb18f6c314cf566630253d35c89e42c3,David Lord,2023-08-16,fix flake8 bugbear findings
+c49ce2e1eb8b598e724388bead0943837bab8027,David Lord,2023-08-16,fix flake8 bugbear findings
+3237fff4b86227a84913d3885b600738bb9479a0,David Lord,2023-08-16,Merge branch '2.3.x'
+6d266f63633f5f127165d4ef836db14a59bbc106,David Lord,2023-08-16,Pass maxsplit via kwarg to re.split (#5215)
+17e146ad949b3d80438faf95e81b53c543cb50f5,hauntsaninja,2023-08-08,Pass maxsplit via kwarg to re.split
+80ae10f402facf375be30eb62fdaf0d34d57a66d,David Lord,2023-08-16,update dev requirements
+7d399e80c34df8daff66f45b74fdde0edd58d63c,David Lord,2023-08-16,Merge branch '2.3.x'
+b1385919bea3238d49a6e2cfc8261771775cd6e9,David Lord,2023-08-01,Bump pypa/gh-action-pypi-publish from 1.8.7 to 1.8.8 (#5213)
+6a5277d3417b30d6e7f5c93745e8a445dcb02b1c,David Lord,2023-08-01,Bump actions/setup-python from 4.6.1 to 4.7.0 (#5212)
+dcc86ebfce71bf2829bce429134d6424355f159a,dependabot[bot],2023-08-01,Bump pypa/gh-action-pypi-publish from 1.8.7 to 1.8.8
+180ff8853c69240a3d214734da8d78f8d4d6f0bc,dependabot[bot],2023-08-01,Bump actions/setup-python from 4.6.1 to 4.7.0
+8a72b741616556b4f739ea79ab502c2d2038844a,David Lord,2023-08-01,[pre-commit.ci] pre-commit autoupdate (#5211)
+7255be9626ab56d81bc0ab86db939fcc1da9bca1,pre-commit-ci[bot],2023-08-01,[pre-commit.ci] pre-commit autoupdate
+f215de030e4bb66205e39c786437b41aa86a5dd6,David Lord,2023-07-04,[pre-commit.ci] pre-commit autoupdate (#5187)
+65bc7636348a9ca32ccafb9f685ab4377e1e446d,pre-commit-ci[bot],2023-07-04,[pre-commit.ci] pre-commit autoupdate
+a0db8908530769e83f388d6b61438a6a2ee0bded,David Lord,2023-07-03,Update install.rst with required description (#5182)
+11da927fd993c941618a67b443cc0649402f4de0,Pamela Fox,2023-07-01,Update install.rst with required description
+cb825687a592709f902f3d320d93987a0546fd28,David Lord,2023-07-01,Bump actions/checkout from 3.5.2 to 3.5.3 (#5186)
+51bf0fdd9018d63b7bc09db52a66b726c2c4bad8,David Lord,2023-07-01,Bump slsa-framework/slsa-github-generator from 1.6.0 to 1.7.0 (#5185)
+0da5788efbda92b6b6239352c2b9a835efe0888f,David Lord,2023-07-01,Bump dessant/lock-threads from 4.0.0 to 4.0.1 (#5184)
+326484a8d107c3af490d7d294c17832afabae785,David Lord,2023-07-01,Bump pypa/gh-action-pypi-publish from 1.8.6 to 1.8.7 (#5183)
+1ce4d95de92fdd9423c295bf9b63117817fab3bf,dependabot[bot],2023-07-01,Bump actions/checkout from 3.5.2 to 3.5.3
+1fb188636e6a21e9c1fefdf4dd8c671dd3f332d6,dependabot[bot],2023-07-01,Bump slsa-framework/slsa-github-generator from 1.6.0 to 1.7.0
+f62580b947e3be4d8b5ef5fa486d1472884aacd5,dependabot[bot],2023-07-01,Bump dessant/lock-threads from 4.0.0 to 4.0.1
+47a89da558e240148ced28ddcc4e709a4be4955a,dependabot[bot],2023-07-01,Bump pypa/gh-action-pypi-publish from 1.8.6 to 1.8.7
+09789f2a34633be446f7fa04955e55a373b36302,David Lord,2023-06-29,fix typo in errorhandling doc (#5180)
+aea13d5a100b03758fecb88a34daeab4f8aa8426,ToolMoney,2023-06-29,fix typo in errorhandling doc
+15a0d4afd481a7f8f7dcf3b45da7175ed14226c5,David Lord,2023-06-27,Merge branch '2.3.x'
+f39c71609e9372bec8beb01c5aea3957ec2d1a9b,David Lord,2023-06-27,remove manifest.in
+3c85ec953f15fe3be339a136181fa1483320f65a,David Lord,2023-06-27,use flit_core as build backend (#5177)
+6b9acd565cded9c805760037b69754c11749c830,David Lord,2023-06-27,switch docs to flit
+46b328854a1ec1e892da02f523b2ed0745fe69e2,David Lord,2023-06-27,switch examples to flit
+f38f3a745ab2f90084f495403ed28d4fc27e4b50,David Lord,2023-06-27,switch to flit build backend
+b1bdd9756478f178680fa119514a58b4b48efc38,David Lord,2023-06-27,Merge branch '2.3.x'
+d67c47b81f4cbfda79f108a8ee4a183855127efb,David Lord,2023-06-27,simplify tox config
+7bfbcfab8725a5e469acf2b84f6061d6afb2f649,David Lord,2023-06-27,Merge branch '2.3.x'
+8933d7544395aeaa91c66d9f26d10b4fe2e92d7b,David Lord,2023-06-27,update pypy test version
+cc55d7b3cfb816575beef1011693f5cae6c2d3b5,David Lord,2023-06-27,Merge branch '2.3.x'
+aca7d5637d0c1c95b961e3396039869c6e981e23,David Lord,2023-06-27,update dependencies
+ec2b2394dccb02dac919b024608e9980f16459f6,David Lord,2023-06-21,update import of declarative_base from SQLAlchemy (#5171)
+a7ae372f2f58343a7eb56209f29eb9879e171b58,mohammad m. moniri,2023-06-21,update import of declarative_base from SQLAlchemy
+4bcd4be6b7d69521115ef695a379361732bcaea6,David Lord,2023-06-09,Merge branch '2.3.x'
+8e33b7b3e254f2a93101bcce21f85ff203831a4c,David Lord,2023-06-09,update werkzeug requirement
+4be9f521425b7ad659b182c319dc3afb8fe64f53,David Lord,2023-06-09,fix use of `importlib.util.find_spec` (#5161)
+bda295d37fa3809c95a93d01dd605d0222109889,David Lord,2023-06-09,fix use of importlib.util.find_spec
+4d6ae8273a54e3407ab5046fc0856a9d40097e74,David Lord,2023-06-08,Merge branch '2.3.x'
+c8cf4694c60f0d81809468a1b45ec730496cc546,David Lord,2023-06-08,unpin sphinx and sphinx-tabs
+935ee742b49cfcda876eaf366d53bf150bcafd44,David Lord,2023-06-07,Merge branch '2.3.x'
+9930b0fe8e739ceb312f9554f9d41b73c2aaa733,David Lord,2023-06-07,Python 3.12 compatibility (#5157)
+ed8ddb6a3a14ae332823b0a266b02a5ef024cbb3,David Lord,2023-06-07,update werkzeug to 2.3.5
+84e11a1e827c0f55f9b9ee15952eddcf8a6492e0,David Lord,2023-06-07,use importlib instead of pkgutil
+367e1df785a71e9004d9a87a221652bfc5a964ac,David Lord,2023-06-07,start version 2.3.3
+2be71d323d87ec5e9f269666f8d08ec5af77eeb8,David Lord,2023-06-07,[pre-commit.ci] pre-commit autoupdate (#5154)
+d614d6bf8c7b6db6f817648836f9044b13dc42b4,David Lord,2023-06-06,ignore pytest ast warnings
+32d2f47ed1bf3f27fd46e1a54dd136688de9ab81,pre-commit-ci[bot],2023-06-06,[pre-commit.ci] pre-commit autoupdate
+c9b6110dec52ff483b42b1428221f903bf143788,David Lord,2023-06-06,Merge branch '2.3.x'
+7dbb2f7e05d2c0963e90016b1f7a3a45e98a865a,David Lord,2023-06-06,retarget pre-commit.ci
+a3e4013f893831adb8c9f2947c29dfeeb47d2145,David Lord,2023-06-01,Bump actions/setup-python from 4.6.0 to 4.6.1 (#5150)
+fb20cbbf1efbf7dd384171b9cd2587c234f15ddf,David Lord,2023-06-01,Bump pypa/gh-action-pypi-publish from 1.8.5 to 1.8.6 (#5149)
+c49757a4592f2fbd7ecfa4daccbfe8a4ec14c1e6,David Lord,2023-06-01,Bump slsa-framework/slsa-github-generator from 1.5.0 to 1.6.0 (#5148)
+18e703bc9341b8066e2b277af5d37b13f5bd3aef,dependabot[bot],2023-06-01,Bump actions/setup-python from 4.6.0 to 4.6.1
+fc74a114b3afe87284467f2ccdbeb7a4a8badbc4,dependabot[bot],2023-06-01,Bump pypa/gh-action-pypi-publish from 1.8.5 to 1.8.6
+40f31c307848e560336fc8b336fbc2fdc1a478ee,dependabot[bot],2023-06-01,Bump slsa-framework/slsa-github-generator from 1.5.0 to 1.6.0
+31fd9c87912a7020a00d83d2135559433173708c,David Lord,2023-05-31,Merge branch '2.3.x'

@@ -1,0 +1,57 @@
+{
+  "repo_info": {
+    "name": "flask",
+    "full_name": "pallets/flask",
+    "stars": 71081,
+    "forks": 16681,
+    "open_issues": 13,
+    "created_at": "2010-04-06T11:11:59Z",
+    "updated_at": "2026-01-23T09:30:19Z",
+    "language": "Python",
+    "size": 11311,
+    "license": "BSD 3-Clause \"New\" or \"Revised\" License"
+  },
+  "issues": [
+    {
+      "number": 5895,
+      "title": "change default redirect code to 303",
+      "state": "open",
+      "created_at": "2026-01-23T00:11:40Z",
+      "user": "davidism",
+      "comments": 0
+    },
+    {
+      "number": 5881,
+      "title": "asgiref fails with gevent patching",
+      "state": "open",
+      "created_at": "2026-01-05T18:52:04Z",
+      "user": "davidism",
+      "comments": 13
+    },
+    {
+      "number": 5825,
+      "title": "Document 415 on the receiving json section",
+      "state": "open",
+      "created_at": "2025-10-07T15:41:58Z",
+      "user": "elafonta",
+      "comments": 4
+    },
+    {
+      "number": 5816,
+      "title": "deprecate `should_ignore_error`",
+      "state": "open",
+      "created_at": "2025-09-14T16:38:15Z",
+      "user": "davidism",
+      "comments": 4
+    },
+    {
+      "number": 5804,
+      "title": "3.1.2 regression: `stream_with_context` triggers `teardown_request()` calls before response generation",
+      "state": "open",
+      "created_at": "2025-09-01T14:24:02Z",
+      "user": "noirbee",
+      "comments": 8
+    }
+  ],
+  "fetched_at": "2026-01-23 18:10:00"
+}
