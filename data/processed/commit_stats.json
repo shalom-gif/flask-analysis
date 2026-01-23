@@ -1,0 +1,25 @@
+{
+  "data_source": "version_range",
+  "total_commits": 1151,
+  "total_authors": 128,
+  "date_range": {
+    "start": "2021-01-01",
+    "end": "2023-12-14",
+    "days": 1077
+  },
+  "avg_commits_per_day": 1.07,
+  "top_5_authors": {
+    "David Lord": 779,
+    "Grey Li": 61,
+    "dependabot[bot]": 48,
+    "pgjones": 45,
+    "dependabot-preview[bot]": 31
+  },
+  "most_active_month": "2021-05",
+  "max_monthly_commits": 116,
+  "yearly_commits": {
+    "2021": 458,
+    "2022": 368,
+    "2023": 325
+  }
+}
